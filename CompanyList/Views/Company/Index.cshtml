@@ -1,0 +1,33 @@
+﻿@model CompanyList.Models.CompanyModel
+@{
+    ViewBag.Title = "Index";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table class="table table-striped">
+        <tr>
+            <td>Company Name</td>
+            <td>Company Location</td>
+        </tr>
+
+        @foreach (var item in Model.CompanyLists)
+        {
+            <tr>
+                <td><a href="">@item.Cname</a></td>
+                <td>@item.Clocation</td>
+
+
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
+
+    <tr>
+        <td></td>
+    </tr>
+
